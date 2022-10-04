@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&display=swap');
+
+*{
+    margin: auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'lora', serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+    letter-spacing: 2px;
+}
+
+ header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    width: 100%;
+    max-height: max-content;
+    min-height: 1em;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.logo-section{
+
+    color: aqua;
+    width: 10%;
+    margin-top:5px;
+    margin-left: 20px;
+}
+
+.logo-sec{
+    margin-left: 0.8em;
+    max-width: 35%;
+    max-height: 100%;
+}
+
+.navigation-bar{
+    width: 70%;
+    flex-grow: 2%;
+    margin-inline: initial;
+}
+
+:root{
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+
+.light-theme{
+    --primary-color: white;
+    --secondary-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a{
+    color: gray;
+    text-decoration: none;
+}
+
+header a,
+footer a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav-link:hover {
+    background-color: aliceblue;
+    color: black;
+    font-size: 20px;
+}
+
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 0px;
+    padding-top: 1em;
+    width: 100%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5% 0;
+}
+
+section div{
+    width: 50%;
+    margin: 0 auto;
+}
+
+section h2{
+    text-align: center;
+}
+
+.cover-section{
+    margin-top: 0px;
+    padding: 0% 0% 0% 0%;
+}
+
+h1{
+    padding-bottom: 30px;
+    padding-left: 0.5em;
+    text-align: justify;
+    font-size: 5vw;
+    letter-spacing: 0.5em; 
+}
+
+.title-text{
+    width: 20%;
+    text-align: center ;
+    color: black;
+    margin-left: 10%;
+    padding: 20px;
+    animation: fade-in 5s;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.box-feature{
+    display: flex;
+    flex-direction: inherit;
+    width: 60%;
+    max-height: auto;
+    padding: 5%;
+}
+
+.box-feature img{
+    width: 100%;
+}
+
+.box-feature .cover-image{
+    animation: fade-in 5s;
+}
+
+.story-section{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0%;
+}
+
+.section-text h2{
+    text-align: center;
+}
+
+.section-text p{
+    text-align: justify;
+    margin: auto 2.5em;
+    line-height: 1.9em;
+}
+
+.samples{
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+.featured{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 4%;
+    margin: 20px auto;
+}
+
+.work{
+    width: 100%;
+    color: var(--secondary-color);
+}
+.work img {
+    width: 250px;
+    height: 290px;
+    cursor: pointer;
+    max-height: auto;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+.work img:hover{
+    cursor: pointer;
+    transform: translateY(-15px);
+    transition: all ease 0.5s;
+    opacity: 1;
+}
+
+h2{
+    font-size: 3.0vw;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.contact-section{
+    flex-direction: row;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-bottom: -50px;
+}
+
+.form-box{
+    padding-top: 1em;
+}
+
+form .form-entry{
+    display: block;
+    padding: 0.8em 0;
+}
+
+.section-text h2{
+    letter-spacing: 3px;
+}
+
+form .txt-box{
+    margin-top: 0.3em;
+    width: 100%;
+    padding: 0.7em 0;
+    border-radius: 2px;
+    border: 2px transparent;
+}
+
+form .btn{
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+    letter-spacing: inherit;
+    border: 2px solid #eaeaea;
+    box-shadow: 0px 0px 10px 1px #29393e;
+    border-radius: 5px;
+    padding: 0.5em 2em;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: rgb(32,32,32);
+    color: aliceblue;
+}
+
+#aboutme{
+    text-align: center;
+    padding-top: 0;
+}
+section p.ringkasan {
+    font-style: italic;
+    font-size: 18px;
+    color: #ababab;     
+}
+section .konten-isi p {
+    font-style: normal;
+}
+nav.putih {
+    background-color: var(--primary-color);
+}
+nav.putih .tombol-menu .garis {
+    background-color: var(--secondary-color);
+}
+nav.putih ul li a {
+    color: var(--secondary-color);
+}
+section.abuabu {
+    background-color: var(--primary-color);
+}
+
+
+
+
+
